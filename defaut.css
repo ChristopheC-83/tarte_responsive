@@ -1,0 +1,238 @@
+/* Polices personnalisées */
+
+@font-face {
+  font-family: "beauty mermaid";
+  src: url("sources/polices/beauty_mermaid.ttf");
+}
+
+@font-face {
+  font-family: "beauty mermaid";
+  src: url("sources/polices/beauty_mermaid_italic.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "beauty mermaid";
+  src: url("sources/polices/beauty_mermaid_bold.ttf");
+  font-style: bold;
+}
+
+/********************/
+
+* {
+    padding: 0;margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid violet; */
+}
+
+
+
+body {
+  background: #f6f6f6;
+  margin: 0;
+  font-family: arial;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* width: 100vw; */
+  overflow: hidden;
+}
+
+footer {
+  border-top: 1px solid black;
+  padding: 30px 0;
+  background: #515070;
+  color: white;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: silver;
+}
+
+nav {
+  padding: 15px 0;
+  background: #515070;
+}
+
+#logo {
+  font-size: 45px;
+  font-family: "beauty mermaid", cursive;
+  text-align: center;
+  background: #ff8e6e;
+  color: white;
+  padding: 15px 0;
+}
+
+
+
+#ingredients {
+  background: #393b44;
+  color: white;
+  padding: 15px;
+}
+
+#etapes {
+  padding: 15px;
+}
+
+#colonne_droite {
+  width: 67%;
+  /* margin-left: 3%; */
+  /* display: inline-block; */
+}
+
+#presentation {
+    width: 100%;
+}
+#presentation a {
+  color: #ff8e6e;
+}
+
+#lipsum {
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 24px -11px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 24px -11px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 24px -11px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  background: #f1f3f8;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: justify;;
+}
+
+p {
+  display: inline-block;
+}
+
+section {
+  margin: 30px 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px;
+
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.text_accueil {
+  display: flex;
+  width: 100%;
+  overflow-x: hidden;
+  gap: 15px;
+}
+
+.recette{
+    display: flex;
+    gap: 30px;
+
+}
+.recette img{
+    width: 100%;
+}
+
+.img_recette{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    min-width: 300px;
+}
+
+ol, ul{
+margin-top: 10px;}
+ol{
+    margin-left: 15px;
+}
+#ingredients, #etapes{
+padding-left: 10px;
+}
+
+@media all and (max-width: 950px){
+    .text_accueil{
+        flex-direction: column;
+        width: 96%;
+        margin: 30px auto;
+        gap: 30px;
+    }
+    h1{
+        margin-bottom: 20px;
+    }
+    #lipsum{
+        padding: 0px;
+    }
+
+}
+
+@media all and (max-width: 560px){
+    #logo{
+    font-size: 30px;
+    }
+
+    .container{
+    padding: 0 5px ;}
+
+    
+
+}
+@media all and (max-width: 750px){
+    .recette{
+        flex-direction: column;
+        width: 96%;
+        margin: 20px auto;
+    }
+    #colonne_droite{
+        display: flex;
+        gap: 15px;
+        width: 100%;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    #ingredients, #etapes{
+        /* width: 96%; */
+        margin: 0 auto;
+    }
+
+    #ingredients{
+        flex-grow: 1;
+    }.img_recette{
+        min-width: 50px;
+    }
+    
+
+    
+
+}
+@media all and (max-width: 500px){
+    .recette{
+        flex-direction: column;
+        width: 96%;
+        margin: 20px auto;
+    }
+    #colonne_droite{
+        flex-direction: column;
+    }
+    #ingredients, #etapes{
+        width: 96%;
+        margin: 0 auto;
+    }
+
+}
